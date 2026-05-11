@@ -93,17 +93,14 @@ input {
 
 .map-window {
   position: absolute;
-  left: 2.23%;
-  top: 25.18%;
+  left: 0;
+  top: 22%;
   z-index: 10;
-  height: 51.5%;
-  width: 95.86%;
+  height: 58%;
+  width: 100%;
   overflow: hidden;
-  border-radius: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 0;
   background: #0d1512;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-    0 18px 46px rgba(30, 54, 45, 0.28);
 }
 
 .map-window .maplibregl-map,
@@ -212,11 +209,11 @@ input {
 
 @media (min-width: 768px) {
   .map-window {
-    left: 19.45%;
-    top: 28.8%;
-    height: 50.05%;
-    width: 61.1%;
-    border-radius: clamp(1.75rem, 2.4vw, 2.75rem);
+    left: 0;
+    top: 22%;
+    height: 58%;
+    width: 100%;
+    border-radius: 0;
   }
 
   .control-panel {
@@ -284,4 +281,8 @@ input {
   .maplibregl-popup-tip {
     @apply hidden!;
   }
+}
+
+.maplibregl-ctrl-attrib {
+  display: none !important;
 }
